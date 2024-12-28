@@ -1,0 +1,165 @@
+:root {
+    --color-light-yellow: #f1f7cd;
+    --color-light-green: #d3f7cd;
+    --color-medium-green: #b5f7cd;
+    --color-dark-brown: #403a26;
+    --color-olive-gray: #81876c;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.botonesPrincipales{
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(136, 132, 123);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.fuenteBoton{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#carritoIcon{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--color-medium-green);
+    color: var(--color-dark-brown);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#carritoIcon img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#carrito{
+    position: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: white;
+    top: 0;
+    right: -100%;
+    transition: right 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    overflow-y: auto;
+}
+
+#carrito.active{
+    right: 0;
+}
+
+#total {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color-medium-green);
+    color: var(--color-dark-brown);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-light-yellow);
+    color: var(--color-dark-brown);
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.main{
+    padding: 20px;
+}
+
+.esquemaProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1000px;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: auto;
+}
+.cardProductos{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 250px;
+    background-color: #bad8c2;
+    margin: 10PX;
+    flex-wrap: nowrap;
+    }
+
+.cardProductos div{
+    width: 100%;
+    height: 130px;
+}
+
+.cardProductos div img{
+    width: 90%;
+    height: 95%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+p{
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.botonPedidos{
+    margin-left: 130px;
+    margin-top: -25px;
+    cursor: pointer;
+    background-color: rgba(244, 189, 9, 0.719);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover{
+        background-color: rgb(0, 255, 13);
+    }
+}
+button img{
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.botonCarrito{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
