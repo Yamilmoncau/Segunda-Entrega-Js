@@ -57,7 +57,7 @@ const modelo = `
                 <div>
                     <img src="../assets/img/picoDulce.jpg" alt="Producto1">
                 </div>
-                <h3>chupapija</h3>
+                <h3>Pico Dulce</h3>
                 <p>$1000</p>
                 <button class="botonesPrincipales botonPedidos botonesCompra"><img src="../assets/img/changoReducida.jpg" alt="imagen carrito"></button>
             </article>
