@@ -57,7 +57,7 @@ const modelo = `
                 <div>
                     <img src="../assets/img/picoDulce.jpg" alt="Producto1">
                 </div>
-                <h3>Pico dulce</h3>
+                <h3>chupapija</h3>
                 <p>$1000</p>
                 <button class="botonesPrincipales botonPedidos botonesCompra"><img src="../assets/img/changoReducida.jpg" alt="imagen carrito"></button>
             </article>
@@ -76,9 +76,4 @@ productosGolosinas.forEach(el => {
 const BotonesProductos = document.getElementsByClassName("botonesCompra")
 const arrayBotonesProductos = Array.from(BotonesProductos)
 
-arrayBotonesProductos.forEach(el => {
-    el.addEventListener("click", (event) => {
-        alert(event.target.parentElement.children[0].innerText)
-    
-    })
-})
+

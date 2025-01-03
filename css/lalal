@@ -239,3 +239,57 @@ footer img{
     border-radius: 10px;
     max-width: 18%;
 }
+
+
+/*CarritoIcon*/
+
+#carritoIcon{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--color-medium-green);
+    color: var(--color-dark-brown);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#carritoIcon img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#carrito{
+    position: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: white;
+    top: 0;
+    right: -100%;
+    transition: right 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    overflow-y: auto;
+}
+
+#carrito.active{
+    right: 0;
+}
+
+#total {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color-medium-green);
+    color: var(--color-dark-brown);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}

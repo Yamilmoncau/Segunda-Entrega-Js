@@ -1,17 +1,67 @@
-:root {
-    --color-light-yellow: #f1f7cd;
-    --color-light-green: #d3f7cd;
-    --color-medium-green: #b5f7cd;
-    --color-dark-brown: #403a26;
-    --color-olive-gray: #81876c;
+/*Header*/
+header{
+    height: 70px;
+    background-color:gray;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.navbar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    h1{
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+}
+.navbar div img{
+        margin-left: 20rem;
+        margin-right: 20rem;
+}
+
+.menu_hamburguesa:checked + .ulLinks{
+    height: 260%;
+    transition: all .8s;
+}
+
+.menu_hamburguesa{
+    display: none;
+
 }
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.ListIcon{
+    cursor: pointer;
+
 }
+
+.ulLinks{
+    width: 20%;
+    position: absolute;
+    background-color: gray;
+    top: 66px;
+    left: -40px;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+}
+
+/*Botones*/
+
 .botonesPrincipales{
     margin: 5px;
     padding: 5px;
@@ -27,75 +77,29 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#carritoIcon{
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: var(--color-medium-green);
-    color: var(--color-dark-brown);
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    z-index: 1000;
-}
 
-#carritoIcon img{
-    width: 30px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
+/*body*/
 
-#carrito{
-    position: fixed;
-    min-height: 100vh;
-    width: 100vw;
-    background-color: white;
-    top: 0;
-    right: -100%;
-    transition: right 0.5s ease-in-out;
+.botonHeaderPaginaPrincipal{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 100px;
-    overflow-y: auto;
 }
-
-#carrito.active{
-    right: 0;
+.imagenPaginaPrincipal{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
 }
-
-#total {
-    position: fixed;
-    bottom: 0;
-    background-color: var(--color-medium-green);
-    color: var(--color-dark-brown);
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    margin: 20px 0;
+.listaCategorias{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--color-light-yellow);
-    color: var(--color-dark-brown);
-}
-
-h1{
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 40px 0;
-    text-align: center;
-}
-
-.main{
-    padding: 20px;
-}
-
 .esquemaProductos{
     display: flex;
     flex-direction: row;
@@ -137,7 +141,6 @@ p{
     margin-left: 20px;
     margin-top: 15px;
 }
-
 .botonPedidos{
     margin-left: 130px;
     margin-top: -25px;
@@ -163,3 +166,127 @@ button img{
     right: 0;
 }
 
+
+
+/*Footer*/
+
+footer{
+    height: auto;
+    background-color:gray;
+    padding: 1px;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+footer img{
+    height: 120px; 
+}
+
+.footerh2{
+    font-size: 25px;
+}
+.footerp{
+    font-size: 16px;
+}
+
+.footersection1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footersection2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.banner{
+    height: 80vh;
+    width: 100%;
+    background-image: url("../../assets/img/bannerPrincipal1.png");
+    background-image: url("../assets/img/bannerPrincipal1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*tres puntitos*/
+.listaNav{
+    list-style: none;
+}
+.infoEmpresa1{
+    margin-top: 80px;
+    margin-left: 13px;
+}
+.infoEmpresa{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 18%;
+}
+
+
+/*CarritoIcon*/
+
+#carritoIcon{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(244, 189, 9, 0.719);
+    color: blueviolet;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#carritoIcon img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#carrito{
+    position: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: white;
+    top: 0;
+    right: -100%;
+    transition: right 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    overflow-y: auto;
+}
+
+#carrito.active{
+    right: 0;
+}
+
+#total {
+    position: fixed;
+    bottom: 0;
+    background-color:rgba(244, 189, 9, 0.719);
+    color: brown;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}

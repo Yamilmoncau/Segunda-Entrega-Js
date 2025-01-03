@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <div id="carritoIcon">
-            <span></span>
-            <img src="../assets/img/changoReducida.jpg" alt="imagen carrito">
-        </div>
-        <div id="carrito" class="botonCarritoMovil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <label class="labelHamburguesa" for="menu_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                width="25" 
+                height="25" 
+                fill="currentColor" 
+                class="ListIcon" 
+                viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" 
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </label>
+            <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            <ul class="ulLinks">
+                <li class="liLinks"><a href="#"><Button class="botonesPrincipales">Productos</Button></a></li>
+                <li class="liLinks"><a href="#"><Button class="botonesPrincipales">mi cuenta</Button></a></li>
+                <li class="liLinks"><a href="#" class="link"><Button class="botonesPrincipales">mis pedidos</Button></a></li>
+                <li class="liLinks"><a href="#" class="link"><Button class="botonesPrincipales">Carrito</Button></a></li>
+                <li class="liLinks"><a href="#" class="link"><Button class="botonesPrincipales">Iniciar/cerrar sesion</Button></a></li>    
+            </ul>
             <div>
-                <h3>Tus productos:</h3>
-                <div id="productosCarrito">
-                    <div class="producto">
-                        <h3>Nombre:</h3>
-                        <p>Precio: $1000</p>
-                        <p>Cantidad: 2</p>
-                        <button class="botonEliminar">X</button>
+                <img src="../assets/img/imagenLogoReducida.jpg" alt="Logo de la empresa">
+            </div>
+            <a href="../index.html"><Button class="botonesPrincipales botonHeader">Iniciar/cerrar sesion</Button></a>
+        </nav>
+    </header>
+    <main class="mainPpal">
+        <section>
+            <div class="imagenPaginaPrincipal">
+                <img src="../assets/img/bannerSinBordes.png" alt="imagen de banner">
+            </div>
+        </section>
+        <section>
+            <div id="carritoIcon">
+                <span></span>
+                <img src="../assets/img/changoReducida.jpg" alt="imagen carrito">
+            </div>
+            <div id="carrito" class="botonCarritoMovil">
+                <div>
+                    <h3>Tus productos:</h3>
+                    <div id="productosCarrito">
+                        <div class="producto">
+                            <h3>Nombre:</h3>
+                            <p>Precio U: $1000</p>
+                            <p>Cantidad: 2</p>
+                            <p>Sub Total: $2000</p>
+                            <button class="botonEliminar">X</button>
+                        </div>
                     </div>
                 </div>
+                <div id="total">$0</div>
             </div>
-            <div id="total">$0</div>
-        </div>
-        <h1>Distribuidora del Sur AXSO</h1>
-        <div class="main esquemaProductos">
-            <article class="productos cardProductos" id="productos">
+        </section>
+        <section class="esquemaProductos">
+            <article class="cardProductos">
                 <div>
                     <img src="../assets/img/picoDulce.jpg" alt="Producto1">
                 </div>
@@ -35,31 +70,88 @@
                 <p>$1000</p>
                 <button class="botonesPrincipales botonPedidos"><img src="../assets/img/changoReducida.jpg" alt="imagen carrito"></button>
             </article>
-            <article class="productos cardProductos" id="productos">
+            <article class="cardProductos">
                 <div>
-                    <img src="../assets/img/picoDulce.jpg" alt="Producto1">
+                    <img src="../assets/img/block38Gr.jpg" alt="Producto2">
                 </div>
-                <h3>Pico dulce</h3>
+                <h3>Block de 38 gr</h3>
+                <p>$1000</p>
+                <button class="botonesPrincipales botonPedidos"><img src="../assets/img/changoReducida.jpg" alt="imagen carrito"></button>             
+            </article>
+            <article class="cardProductos">
+                <div>
+                    <img src="../assets/img/rhodesia.jpg" alt="Producto3">
+                </div>
+                <h3>Rhodesia</h3>
                 <p>$1000</p>
                 <button class="botonesPrincipales botonPedidos"><img src="../assets/img/changoReducida.jpg" alt="imagen carrito"></button>
             </article>
-            <article class="productos cardProductos" id="productos">
+            <article class="cardProductos">
                 <div>
-                    <img src="../assets/img/picoDulce.jpg" alt="Producto1">
+                    <img src="../assets/img/natura.jpg" alt="Producto4">
                 </div>
-                <h3>Pico dulce</h3>
+                <h3>Natura de 125 gr</h3>
                 <p>$1000</p>
                 <button class="botonesPrincipales botonPedidos"><img src="../assets/img/changoReducida.jpg" alt="imagen carrito"></button>
             </article>
-            <article class="productos cardProductos" id="productos">
+            <article class="cardProductos">
                 <div>
-                    <img src="../assets/img/picoDulce.jpg" alt="Producto1">
+                    <img src="../assets/img/turronNevares.jpg" alt="Producto5">
                 </div>
-                <h3>Pico dulce</h3>
+                <h3>Turron nevares</h3>
                 <p>$1000</p>
-                <button class="botonesPrincipales botonPedidos botonesCompra"><img src="../assets/img/changoReducida.jpg" alt="imagen carrito"></button>
+                <button class="botonesPrincipales botonPedidos"><img src="../assets/img/changoReducida.jpg" alt="imagen carrito"></button>
             </article>
-        </div>
-        <script src="./main.js"></script>
-    </body>
+            <article class="cardProductos">
+                <div>
+                    <img src="../assets/img/jugoClight.jpg" alt="Producto6">
+                </div>
+                <h3>Jugo clight</h3>
+                <p>$1000</p>
+                <button class="botonesPrincipales botonPedidos"><img src="../assets/img/changoReducida.jpg" alt="imagen carrito"></button>
+            </article>
+            <article class="cardProductos">
+                <div>
+                    <img src="../assets/img/alfajorPepito.jpg" alt="Producto7">
+                </div>
+                <h3>Alfajor pepito</h3>
+                <p>Precio $1000</p>
+                <button class="botonesPrincipales botonPedidos"><img src="../assets/img/changoReducida.jpg" alt="imagen carrito"></button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="footersection1">
+        <figure>
+            <img src="../assets/img/imagen-logistica.jpg" alt="Un camion entregando el pedido en la direccion correspondiente">
+        </figure>
+        <article>
+            <h2 class="fuente footerh2">Servicios al cliente</h2>
+            <p class="fuente footerp">¿Como compro?</p>
+            <p class="fuente footerp">Preguntas frecuentes</p>
+            <p class="fuente footerp">Envios y zonas de cobertura</p>
+            <p class="fuente footerp">Reclamos</p>
+        </article>
+        <article>
+            <h2 class="fuente footerh2">Legales</h2>
+            <p class="fuente footerp">Terminos y condiciones</p>
+            <p class="fuente footerp">Politicas de envio</p>
+            <p class="fuente footerp">Promociones y descuentos</p>
+        </article>
+        <article>
+            <div>
+                <a href="#"><img src="../assets/img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="../assets/img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="../assets/img/twitter.png" alt="twitter"></a>
+            </div>
+            <p class="fuente footerp">Todos los derechos reservados 2024</p>
+        </article>
+    </section>
+    <section class="footersection2">
+        <p class="fuente footerp">Somos una empresa dedidaca a la distribucion de mercaderia, brindando un servicio de primera calidad</p>
+        <p class="fuente footerp">Todos los precios de los productos ofrecidos por la Compañía a los consumidores por medio del Sitio Web son a consumidor final, IVA incluido. En caso de requerir factura A, el precio final podría variar por la aplicación de percepciones impositivas según la condición fiscal del cliente.</p>
+    </section>
+    </footer>
+    <script src="./main.js"></script>
+</body>
 </html>
