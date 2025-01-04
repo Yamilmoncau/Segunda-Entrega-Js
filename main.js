@@ -102,7 +102,7 @@ arrayBotonesProductos.forEach(boton => {
             carrito.push({ nombre: nombre, precio: precio, cantidad: 1 });
         }
 
-        alert("¡Producto agregado al carrito!");
+        alert("¡Producto " + nombre + " agregado al carrito!");
         renderizarCarrito(); 
     });
 });
