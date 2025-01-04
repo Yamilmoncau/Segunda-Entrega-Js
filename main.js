@@ -97,14 +97,13 @@ arrayBotonesProductos.forEach(boton => {
         const precioTexto = articulo.querySelector("p").innerText.replace("$", "");
         const precio = Number(precioTexto);
 
-        // Agregar el producto al carrito
         const cantidadChequeada = agruparProductos(nombre);
         if (!cantidadChequeada) {
             carrito.push({ nombre: nombre, precio: precio, cantidad: 1 });
         }
 
         alert("¡Producto agregado al carrito!");
-        renderizarCarrito(); // Actualizar la vista del carrito
+        renderizarCarrito(); 
     });
 });
 
@@ -120,7 +119,7 @@ function agruparProductos(nombreBuscar) {
 
 function renderizarCarrito() {
     const carritoDom = document.getElementById("productosCarrito");
-    carritoDom.innerHTML = ""; // Limpiar el contenido previo
+    carritoDom.innerHTML = ""; 
 
     carrito.forEach((el, index) => {
         carritoDom.innerHTML += `
@@ -134,27 +133,24 @@ function renderizarCarrito() {
         `;
     });
 
-    // Calcular y mostrar el total
     const total = carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
     carritoDom.innerHTML += `<div id="total">Total: $${total}</div>`;
 
-    // Agregar eventos a los botones "X"
     const botonesEliminar = document.getElementsByClassName("botonEliminar");
     Array.from(botonesEliminar).forEach(boton => {
         boton.addEventListener("click", (event) => {
-            const index = event.target.dataset.index; // Obtener índice del producto
+            const index = event.target.dataset.index; 
             eliminarProductoDelCarrito(index);
         });
     });
 }
 
 function eliminarProductoDelCarrito(index) {
-    // Reducir cantidad o eliminar producto del carrito
     carrito[index].cantidad -= 1;
     if (carrito[index].cantidad === 0) {
-        carrito.splice(index, 1); // Eliminar producto si cantidad es 0
+        carrito.splice(index, 1); 
     }
-    renderizarCarrito(); // Actualizar vista del carrito
+    renderizarCarrito(); 
 }
 
 
