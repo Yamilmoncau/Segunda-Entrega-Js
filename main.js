@@ -32,19 +32,19 @@ const productosGolosinas = [
     {
         id: 5,
         nombre: "Turron Nevares",
-        img: "../assets/img/turronNevares.jpg",
+        img: "./assets/img/turronNevares.jpg",
         precio: 1200
     },
     {
         id: 6,
         nombre: "Jugo Clight",
-        img: "../assets/img/jugoClight.jpg",
+        img: "./assets/img/jugoClight.jpg",
         precio: 800
     },
     {
         id: 7,
         nombre: "Alfajor Pepito",
-        img: "../assets/img/alfajorPepito.jpg",
+        img: "./assets/img/alfajorPepito.jpg",
         precio: 800
     },
 ];
@@ -56,7 +56,7 @@ const carrito = [];
 const modelo = `
             <article class="productos cardProductos" id="productos cardProductos">
                 <div>
-                <img src="../assets/img/picoDulce.jpg" alt="Producto1">
+                <img src="./assets/img/picoDulce.jpg" alt="Producto1">
                 </div>
 
                 <h3>nombre del producto</h3>
@@ -79,7 +79,7 @@ productosGolosinas.forEach(el => {
             <h3>${el.nombre}</h3>
             <p>${"$" + el.precio}</p>
             <button class="botonesPrincipales botonPedidos botonesCompra">
-                <img src="../assets/img/changoReducida.jpg" alt="imagen carrito">
+                <img src="./assets/img/changoReducida.jpg" alt="imagen carrito">
             </button>
         </article>
     `;
